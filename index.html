@@ -16,7 +16,8 @@
     document.getElementById("myForm").addEventListener("submit", function(e) {
       e.preventDefault();
       const formData = new FormData(this);
-      const data = Object.fromEntries(formData.entries());      fetch("https://script.google.com/macros/s/AKfycbymYo1ihdhRasB8h6YzHzZq3jTTh-7WatqSOl_F3kPnMwlTUnvLwhUhMIHuGEAAK64p/exec", {
+      const data = Object.fromEntries(formData.entries());   
+      fetch("https://script.google.com/macros/s/AKfycbymYo1ihdhRasB8h6YzHzZq3jTTh-7WatqSOl_F3kPnMwlTUnvLwhUhMIHuGEAAK64p/exec", {
         method: "POST",
         body: JSON.stringify(data),
         headers: {
@@ -35,3 +36,4 @@
   </script>
 </body>
 </html>
+
