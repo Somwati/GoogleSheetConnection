@@ -9,7 +9,7 @@
   const formData = new FormData(this);
     const params = new URLSearchParams(formData).toString();
 
-    fetch("YOUR_WEB_APP_URL?" + params)
+    fetch("https://script.google.com/macros/s/AKfycbymYo1ihdhRasB8h6YzHzZq3jTTh-7WatqSOl_F3kPnMwlTUnvLwhUhMIHuGEAAK64p/exec?" + params)
       .then(response => response.text())
       .then(result => {
         alert("Response: " + result);
@@ -20,3 +20,4 @@
       });
   });
 </script>
+
