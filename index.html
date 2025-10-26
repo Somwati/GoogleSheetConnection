@@ -18,7 +18,7 @@
       const formData = new FormData(this);
       const data = Object.fromEntries(formData.entries());   
       fetch("https://script.google.com/macros/s/AKfycbymYo1ihdhRasB8h6YzHzZq3jTTh-7WatqSOl_F3kPnMwlTUnvLwhUhMIHuGEAAK64p/exec", {
-        method: "POST",
+        method: "GET",
         body: JSON.stringify(data),
         headers: {
           "Content-Type": "application/json"
@@ -36,4 +36,5 @@
   </script>
 </body>
 </html>
+
 
